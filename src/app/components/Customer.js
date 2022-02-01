@@ -10,9 +10,9 @@ const Customer = () => {
                 <p>IFSC Number : BOSP411014</p>
                 <p>Balance : $ 799301</p>
             </Card.Text>
-            <div className='d-flex '>
-                <Button variant="primary">Transfer Funds</Button>
-                <Button variant="primary">View Transactions</Button>
+            <div className='d-flex justify-content-between'>
+                <Button variant="info" size='sm'>Transfer Funds</Button>
+                <Button variant="info" size='sm'>View Transactions</Button>
             </div>
         </Card.Body>
     </Card>;
