@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <Container>
-            <Navbar.Brand href="/">Bank of Spain</Navbar.Brand>
+            <Navbar.Brand className='fst-italic fw-bold' href="/">Bank of Spain</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">

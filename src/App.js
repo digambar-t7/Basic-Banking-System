@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Customers from './app/components/Customers';
 import Header from './app/components/Header';
 import Home from './app/components/Home';
+import Transactions from './app/components/Transactions';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/customers' element={<Customers />} />
+        <Route path='/transactions' element={<Transactions />} />
       </Routes>
     </BrowserRouter>
   );

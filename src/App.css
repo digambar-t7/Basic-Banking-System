@@ -1,7 +1,12 @@
+
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
 .carousel-img {
   max-width: 1366px;
   max-height: 402px;
 }
-#Home{
+.h-100{
   height: 100vh;
 }

@@ -2,12 +2,12 @@ import React from 'react';
 import { Card, Carousel, Container } from 'react-bootstrap';
 
 const Home = () => {
-    return <div id='Home' className='bg-light'>
+    return <div id='Home' className='bg-light h-100'>
         <Carousel >
             <Carousel.Item>
                 <img
                     className="carousel-img d-block w-100"
-                    src={require("./bitcoin.jpg")}
+                    src={require("../images/bitcoin.jpg")}
                     alt="First slide"
                 />
                 <Carousel.Caption>
