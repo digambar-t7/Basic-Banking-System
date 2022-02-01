@@ -41,7 +41,7 @@ const Transfer = (props) => {
 
                     <Form.Group as={Row} className="mb-3" controlId="formPlaintextPin">
                         <Form.Label column sm="4">
-                            Amount
+                            Amount($)
                         </Form.Label>
                         <Col sm="8">
                             <Form.Control type='number' defaultValue="1000" />
@@ -60,7 +60,7 @@ const Transfer = (props) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button onClick={submit}>Send</Button>
-                <Button onClick={props.onHide}>Close</Button>
+                <Button variant="danger" onClick={props.onHide}>Close</Button>
             </Modal.Footer>
         </Modal>
     </>;
