@@ -11,7 +11,7 @@ const Transactions = () => {
                     <th>Sender</th>
                     <th>Reciever</th>
                     <th>Amount</th>
-                    <th>Balance</th>
+                    <th>Available Funds</th>
                 </tr>
             </thead>
             <tbody>
