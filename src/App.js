@@ -1,4 +1,6 @@
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Customers from './app/components/Customers';
 import Header from './app/components/Header';
@@ -12,7 +14,6 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/customers' element={<Customers />} />
       </Routes>
-
     </BrowserRouter>
   );
 }
