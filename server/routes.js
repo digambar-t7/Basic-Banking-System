@@ -55,8 +55,9 @@ router.get('/transactions/:client', async (req, res) => {
         let transactions
         if (client === "all") {
             transactions = await Transfer.find()
+        } else {
+            transactions = await Transfer.find({ $or: [{ sender: client }, { reciever: client }] })
         }
-        transactions = await Transfer.find({ sender: client })
         if (transactions.length === 0) {
             return res.status(500).json({ success: false, msg: "No transaction history found" })
         }

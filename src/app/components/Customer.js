@@ -5,6 +5,10 @@ import Transfer from './Transfer';
 const Customer = (props) => {
     const [modalShow, setModalShow] = useState(false);
 
+    const transactionsOf = (name) => {
+        localStorage.setItem("transaction-for", name)
+    }
+
     const { client } = props;
     return <Card style={{ width: '18rem' }}>
         <Card.Body>
@@ -17,7 +21,7 @@ const Customer = (props) => {
             </Card.Text>
             <div className='d-flex justify-content-between'>
                 <Button variant="info" size='sm' onClick={() => { setModalShow(true) }}>Transfer Funds</Button>
-                <Button variant="info" href={`/transactions/${client.name}`} size='sm'>View Transactions</Button>
+                <Button variant="info" onClick={() => { transactionsOf(client.name) }} href={`/transactions/${client.name}`} size='sm'>View Transactions</Button>
             </div>
         </Card.Body>
         <Transfer
