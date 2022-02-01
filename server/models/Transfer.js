@@ -23,4 +23,4 @@ const transferSchema = new mongoose.Schema({
     }
 })
 
-mongoose.exports = mongoose.model('Transfer', transferSchema)
+module.exports = mongoose.model('Transfer', transferSchema)
